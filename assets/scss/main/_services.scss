@@ -1,0 +1,37 @@
+@use "../abstract/variables" as v;
+@use "../base/typography" as typo;
+@use "../base/base.scss" as base;
+@use "../component/card" as card;
+@use "../abstract/mixins.scss" as mixin;
+// fichier scss de la section services du site 
+
+.service-heading {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.card {
+    @include mixin.card(("../img/img/homme-assis-batiment.jpg"));
+    .card-content {
+        @include mixin.card-content;
+    
+        .card-cta {
+            @include mixin.card-cta;
+        }
+    }
+
+}
+.card-container-right > .card:nth-of-type(1) {
+    background-image: url("../img/img/passport.jpg");
+}
+.card-container-right > .card:nth-of-type(2) {
+    background-image: url("../img/img/montgolfiere.jpg");
+}
+
+.card-cta::after {
+    content: ">";
+    color: #CD654C;
+    font-size: 1.5rem;
+}

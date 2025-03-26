@@ -1,0 +1,27 @@
+@use "../abstract/variables" as v;
+@use "../base/typography" as typo;
+@use "../base/base.scss" as base;
+
+@mixin card ($bg-img) {
+    width: 100%;
+    border-radius: v.$radius;
+    background-image: url($bg-img);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12.5%;
+}
+
+@mixin card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+@mixin card-cta {
+    text-decoration: none;
+    color: white;
+}

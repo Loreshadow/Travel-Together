@@ -15,21 +15,29 @@ h1 {
   font-size: 3rem;
 }
 
-.card-container {
+h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5%;
+}
+
+.cards-container {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.card-container-left {
+  width: 40%;
+}
+.card-container-left .card {
+  height: 100%;
 }
 
 .card-container-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.card {
   width: 40%;
-  border-radius: 10px;
 }
 
 .cta {
@@ -92,6 +100,50 @@ header .logo-container img {
   max-width: 100%;
   position: absolute;
   z-index: -1;
+}
+
+.service-heading {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.card {
+  width: 100%;
+  border-radius: 10px;
+  background-image: url("../img/img/homme-assis-batiment.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12.5%;
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+.card .card-content .card-cta {
+  text-decoration: none;
+  color: white;
+}
+
+.card-container-right > .card:nth-of-type(1) {
+  background-image: url("../img/img/passport.jpg");
+}
+
+.card-container-right > .card:nth-of-type(2) {
+  background-image: url("../img/img/montgolfiere.jpg");
+}
+
+.card-cta::after {
+  content: ">";
+  color: #CD654C;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

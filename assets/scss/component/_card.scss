@@ -2,19 +2,22 @@
 @use "../base/typography" as typo;
 @use "../base/base.scss" as base;
 
-.card-container {
+.cards-container {
     display: flex;
     justify-content: center;
     width: 100%;
+}
+.card-container-left {
+    width: 40%;
+
+    .card {
+        height: 100%;
+    }
 }
 
 .card-container-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.card {
     width: 40%;
-    border-radius: v.$radius;
 }
