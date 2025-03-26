@@ -35,3 +35,7 @@
     color: #CD654C;
     font-size: 1.5rem;
 }
+
+.card-overlay {
+    @include mixin.card-overlay;
+}
