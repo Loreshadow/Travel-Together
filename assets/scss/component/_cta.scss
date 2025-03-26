@@ -1,8 +1,10 @@
 @use "../abstract/variables" as v;
 @use "../base/typography" as typo;
+@use "../base/base.scss" as base;
 
 .cta {
     background-color: white;
     border-radius: v.$radius;
     box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.542);
+    text-decoration: none;
 }

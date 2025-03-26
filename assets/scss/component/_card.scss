@@ -1,5 +1,6 @@
 @use "../abstract/variables" as v;
 @use "../base/typography" as typo;
+@use "../base/base.scss" as base;
 
 .card-container {
     display: flex;
