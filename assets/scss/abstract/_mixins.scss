@@ -19,6 +19,7 @@
 @mixin card-overlay {
     width: 100%;
     height: 100%;
+    border-radius: v.$radius;
     background-color: rgba(0, 0, 0, 0.385);
     z-index: 1;
     position: absolute;
@@ -35,4 +36,16 @@
 @mixin card-cta {
     text-decoration: none;
     color: white;
+}
+
+// features card 
+
+@mixin feature {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    text-align: center;
 }

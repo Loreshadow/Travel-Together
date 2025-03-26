@@ -1,0 +1,31 @@
+@use "../abstract/variables" as v;
+@use "../base/typography" as typo;
+@use "../base/base.scss" as base;
+@use "../abstract/mixins.scss" as mixin;
+
+// page scss de la section features
+.features-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10%;
+}
+
+.features-heading {
+    width: 80%;
+    margin: 1% auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feature-logo-container {
+    width: 20%;
+}
+.feature-logo-container > img {
+    width: 100%;
+}
+
+.feature-card {
+    @include mixin.feature;
+}

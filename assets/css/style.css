@@ -136,10 +136,13 @@ header .logo-container img {
 
 .card-container-right > .card:nth-of-type(1) {
   background-image: url("../img/img/passport.jpg");
+  margin-bottom: 1%;
+  margin-left: 1%;
 }
 
 .card-container-right > .card:nth-of-type(2) {
   background-image: url("../img/img/montgolfiere.jpg");
+  margin-left: 1%;
 }
 
 .card-cta::after {
@@ -151,9 +154,43 @@ header .logo-container img {
 .card-overlay {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.385);
   z-index: 1;
   position: absolute;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 10%;
+}
+
+.features-heading {
+  width: 80%;
+  margin: 1% auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.feature-logo-container {
+  width: 20%;
+}
+
+.feature-logo-container > img {
+  width: 100%;
+}
+
+.feature-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
