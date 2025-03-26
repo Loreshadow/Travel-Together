@@ -4,10 +4,13 @@
 @use "base/typography";
 @use "base/base";
 
-// // component 
-// @use "component/card";
-// @use "component/cta";
-// @use "component/menu-items";
+// component 
+@use "component/card";
+@use "component/cta";
+@use "component/menu-items";
 
-// // Layout 
-// @use "layout/header"
+// Layout 
+@use "layout/header";
+
+// main content 
+@use "main/banner";

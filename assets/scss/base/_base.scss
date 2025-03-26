@@ -1,8 +1,12 @@
 
 @use "../abstract/variables" as v;
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: v.$principal-font;
+    margin: 0;
 }
 
 h1 {

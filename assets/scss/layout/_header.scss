@@ -1,0 +1,15 @@
+@use "../abstract/variables" as v;
+@use "../base/typography" as typo;
+@use "../base/base.scss" as base;
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    .logo-container {
+        width:  10%;
+        img {
+            max-width: 100%;
+        }
+    }
+}
