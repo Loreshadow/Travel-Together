@@ -3,15 +3,20 @@
 @use "../base/base.scss" as base;
 @use "../abstract/mixins.scss" as mixin;
 
+.footer-container {
+    background-color: #1D1D1F;
+}
+
 #bottom-banner {
     display: flex;
     justify-content: flex-start;
-    margin: 2.5% auto;
+    margin: 0 auto;
     padding: 2.5%;
     width: 70%;
     background-color: #E7816B;
     border-radius: v.$radius;
     position: relative;
+    top: -8rem;
 
     .banner-content {
         display: flex;
@@ -28,6 +33,17 @@
         
         a {
             padding: 15px 25px;
+        }
+    }
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    .logo-container {
+        width:  15%;
+        img {
+            max-width: 100%;
         }
     }
 }

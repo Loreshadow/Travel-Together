@@ -71,6 +71,49 @@ header .logo-container img {
   max-width: 100%;
 }
 
+.footer-container {
+  background-color: #1D1D1F;
+}
+
+#bottom-banner {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 2.5%;
+  width: 70%;
+  background-color: #E7816B;
+  border-radius: 10px;
+  position: relative;
+  top: -8rem;
+}
+#bottom-banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  color: white;
+}
+#bottom-banner .bottom-banner-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+#bottom-banner .bottom-banner-cta a {
+  padding: 15px 25px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-content .logo-container {
+  width: 15%;
+}
+.footer-content .logo-container img {
+  max-width: 100%;
+}
+
 #banner {
   display: flex;
   justify-content: flex-start;
@@ -173,7 +216,7 @@ header .logo-container img {
 
 .features-heading {
   width: 80%;
-  margin: 1% auto;
+  margin: auto;
   display: flex;
   justify-content: flex-end;
 }
@@ -194,33 +237,6 @@ header .logo-container img {
   align-items: center;
   gap: 5%;
   text-align: center;
-}
-
-#bottom-banner {
-  display: flex;
-  justify-content: flex-start;
-  margin: 2.5% auto;
-  padding: 2.5%;
-  width: 70%;
-  background-color: #E7816B;
-  border-radius: 10px;
-  position: relative;
-}
-#bottom-banner .banner-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  color: white;
-}
-#bottom-banner .bottom-banner-cta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-}
-#bottom-banner .bottom-banner-cta a {
-  padding: 15px 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
