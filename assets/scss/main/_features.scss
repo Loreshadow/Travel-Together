@@ -7,9 +7,12 @@
 .features-container {
     display: flex;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     gap: 10%;
+    background-image: url(../svg/wave.svg);
+    background-size: cover;
+    height: 70vh;
 }
 
 .features-heading {
