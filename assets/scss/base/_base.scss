@@ -1,0 +1,10 @@
+
+@use "../abstract/variables" as v;
+
+body {
+    font-family: v.$principal-font;
+}
+
+h1 {
+    font-size: 3rem;
+}

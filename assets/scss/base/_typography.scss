@@ -1,4 +1,6 @@
+@use "../abstract/variables" as var;
+
 @font-face {
-    font-family: "Lato";
+    font-family: var.$principal-font;
     src: url(../../fonts/Lato/Lato-Regular.ttf);
 }
