@@ -1,0 +1,19 @@
+@use "../abstract/variables" as v;
+@use "../base/typography" as typo;
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    width: 40%;
+    border-radius: v.$radius;
+}
