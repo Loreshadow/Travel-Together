@@ -2,8 +2,10 @@
 @use "../base/typography" as typo;
 @use "../base/base.scss" as base;
 @use "../layout/header";
+@use "../layout/footer";
 @use "../main/banner";
 @use "../main/services";
+@use "../main/features";
 
 // fichier responsive 
 // responsive tablet 
@@ -29,8 +31,9 @@
     }
     // responsive banner _banner.scss 
     #banner {
+        width: 95%;
         .banner-content {
-            width: 80%;
+            width: 85%;
             margin: 0 auto;
         }
         .banner-img-container {
@@ -60,5 +63,82 @@
                 }
             }
         }
-    }    
+    }
+
+    // Responsive features _features.scss 
+
+    #features {
+        display: flex;
+        flex-direction: column;
+        .features-heading {
+            width: 100%;
+            margin-bottom: 10%;
+            justify-content: center;
+        }
+        .features-container {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .feature-card {
+                width: 75%;
+                margin-bottom: 1.5%;
+            }
+        }
+    }
+
+    #bottom-banner {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: -4%;
+        margin-top: 12.5%;
+        .banner-content {
+            margin: 0 auto;
+            width: 70%;
+        }
+    }
+    // footer responsive _footer.scss
+    .footer-container {
+        text-align: center;
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+
+            .logo-container {
+                width: 50%;
+            }
+
+            .menu-items-bot {
+                .menu-items-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .footer-contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-top: 10%;
+        width: 100%;
+        .contact-container {
+            width: 100%;
+            .contact-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 70%;
+            }
+        }
+    }
+    .footer-content::after {
+        content: "";
+        display: inline-block;
+        width: 75%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: -10%;
+    }
 }

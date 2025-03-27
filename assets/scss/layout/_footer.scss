@@ -43,14 +43,14 @@
     justify-content: center;
     color: white;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 7.5%;
     font-size: 1.25rem;
-    .contact-content-left {
-        list-style: none;
-    }
-    .contact-content-right {
-        list-style: none;
-        margin-left: 15%;
+    .contact-container {
+        width: 70%;
+        .contact-content {
+            list-style: none;
+            margin-left: 15%;
+        }
     }
     .socials-container {
         display: flex;
