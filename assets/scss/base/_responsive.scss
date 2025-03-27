@@ -2,11 +2,13 @@
 @use "../base/typography" as typo;
 @use "../base/base.scss" as base;
 @use "../layout/header";
+@use "../main/banner";
+@use "../main/services";
 
 // fichier responsive 
 // responsive tablet 
 @media screen and (max-width: 768px) {
-
+// responsive header _header.scss
     header {
         display: flex;
         flex-direction: column;
@@ -24,6 +26,39 @@
                 margin-top: -15%;
             }
         }
-
     }
+    // responsive banner _banner.scss 
+    #banner {
+        .banner-content {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .banner-img-container {
+            visibility: hidden;
+        }
+    }
+    // responsive services _services.scss 
+    #services {
+        width: 100%;
+        .cards-container {
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+            .card-container-left {
+                width: 100%;
+                .card {
+                    max-width: 100%;
+                    margin-bottom: 1%;
+                }
+            }
+            .card-container-right {
+                width: 100%;
+                .card {
+                    max-width: 100%;
+                    margin: 0;
+                    margin-bottom: 1%;
+                }
+            }
+        }
+    }    
 }
