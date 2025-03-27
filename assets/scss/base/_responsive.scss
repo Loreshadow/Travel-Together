@@ -104,7 +104,7 @@
             align-items: center;
 
             .logo-container {
-                width: 50%;
+                width: 65%;
             }
 
             .menu-items-bot {
@@ -142,3 +142,32 @@
         bottom: -10%;
     }
 }
+
+// responsive mobile 425px
+
+@media screen and (max-width: 425px) {
+     // responsive banner _banner.scss 
+    #banner {
+        margin: 0 auto;
+        .banner-content {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+        // Responsive features _features.scss 
+        #bottom-banner {
+            .banner-content {
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }

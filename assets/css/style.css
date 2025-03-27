@@ -389,7 +389,7 @@ header nav .menu-item:hover {
     align-items: center;
   }
   .footer-container .footer-content .logo-container {
-    width: 50%;
+    width: 65%;
   }
   .footer-container .footer-content .menu-items-bot .menu-items-container {
     flex-direction: column;
@@ -420,6 +420,23 @@ header nav .menu-item:hover {
     background-color: white;
     position: absolute;
     bottom: -10%;
+  }
+}
+@media screen and (max-width: 425px) {
+  #banner {
+    margin: 0 auto;
+  }
+  #banner .banner-content h1 {
+    font-size: 2rem;
+  }
+  #banner .banner-content p {
+    font-size: 1.25rem;
+  }
+  #bottom-banner .banner-content h2 {
+    font-size: 2rem;
+  }
+  #bottom-banner .banner-content p {
+    font-size: 1.25rem;
   }
 }
 .cta {
