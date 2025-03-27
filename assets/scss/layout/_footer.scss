@@ -3,47 +3,63 @@
 @use "../base/base.scss" as base;
 @use "../abstract/mixins.scss" as mixin;
 
+
 .footer-container {
     background-color: #1D1D1F;
-}
-
-#bottom-banner {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0 auto;
-    padding: 2.5%;
-    width: 70%;
-    background-color: #E7816B;
-    border-radius: v.$radius;
-    position: relative;
-    top: -8rem;
-
-    .banner-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        color: white;
-    }
-    .bottom-banner-cta {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-        
-        a {
-            padding: 15px 25px;
-        }
-    }
+    z-index: -1;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-around;
+    position: relative;
+    width: 100%;
+    padding-top: 10%;
     .logo-container {
         width:  15%;
         img {
             max-width: 100%;
+        }
+    }
+    .menu-item {
+        color: white;
+    }
+}
+
+.footer-content::after {
+    content: "";
+    display: inline-block;
+    width: 75%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -20%;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 1.25rem;
+    .contact-content-left {
+        list-style: none;
+    }
+    .contact-content-right {
+        list-style: none;
+        margin-left: 15%;
+    }
+    .socials-container {
+        display: flex;
+        margin-left: 50%;
+        list-style: none;
+        .social-icon {
+            width: 15%;
+            img {
+                width: 50%;
+            }
         }
     }
 }
