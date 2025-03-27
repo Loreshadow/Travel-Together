@@ -5,11 +5,23 @@
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 2.5% 10% 0 10%;
     .logo-container {
         width:  10%;
         img {
             max-width: 100%;
+        }
+    }
+    .menu-item {
+        color: black;
+    }
+}
+
+header {
+    nav {
+        .menu-item:hover {
+            color: rgba(0, 0, 0, 0.644);
         }
     }
 }
