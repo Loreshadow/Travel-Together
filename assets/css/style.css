@@ -20,6 +20,54 @@ h2 {
   margin-bottom: 1.5%;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5% 10% 0 10%;
+}
+header .logo-container {
+  width: 15%;
+}
+header .logo-container img {
+  max-width: 100%;
+}
+header .menu-item {
+  color: black;
+  transition: all 0.15s ease-in;
+}
+header .menu-img-container {
+  width: 15%;
+  margin: 0 auto;
+  visibility: hidden;
+}
+header .menu-img-container img {
+  width: 100%;
+}
+
+header nav .menu-item:hover {
+  color: rgba(0, 0, 0, 0.644);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .logo-container {
+    width: 50%;
+  }
+  header .logo-container img {
+    width: 100%;
+  }
+  header nav {
+    visibility: hidden;
+  }
+  header nav .menu-img-container {
+    visibility: visible;
+    margin-top: -15%;
+  }
+}
 .cards-container {
   display: flex;
   justify-content: center;
@@ -63,26 +111,6 @@ h2 {
 .menu-items-container .menu-item {
   text-decoration: none;
   display: flex;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 2.5% 10% 0 10%;
-}
-header .logo-container {
-  width: 10%;
-}
-header .logo-container img {
-  max-width: 100%;
-}
-header .menu-item {
-  color: black;
-  transition: all 0.15s ease-in;
-}
-
-header nav .menu-item:hover {
-  color: rgba(0, 0, 0, 0.644);
 }
 
 .footer-container {
