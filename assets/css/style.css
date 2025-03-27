@@ -47,6 +47,7 @@ h2 {
   box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.542);
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.15s ease-in;
 }
 
 .cta:hover {
@@ -77,6 +78,7 @@ header .logo-container img {
 }
 header .menu-item {
   color: black;
+  transition: all 0.15s ease-in;
 }
 
 header nav .menu-item:hover {
@@ -103,6 +105,7 @@ header nav .menu-item:hover {
 }
 .footer-content .menu-item {
   color: white;
+  transition: all 0.15s ease-in;
 }
 
 .footer-content::after {
@@ -144,7 +147,7 @@ header nav .menu-item:hover {
 }
 
 .footer-container .footer-content .menu-items-bot .menu-items-container .menu-item:hover {
-  color: rgb(200, 200, 200);
+  color: rgb(188, 187, 187);
 }
 
 #banner {
@@ -196,6 +199,7 @@ header nav .menu-item:hover {
   justify-content: center;
   padding: 12.5%;
   position: relative;
+  transition: all 0.2s ease-in;
 }
 .card .card-content {
   display: flex;

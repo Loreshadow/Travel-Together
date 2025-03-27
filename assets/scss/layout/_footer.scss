@@ -23,6 +23,7 @@
     }
     .menu-item {
         color: white;
+        transition: all 0.15s ease-in;
     }
 }
 
@@ -69,7 +70,7 @@
         .menu-items-bot {
             .menu-items-container {
                 .menu-item:hover {
-                color: rgb(200, 200, 200);
+                color: rgb(188, 187, 187);
                 }
             }
         }
