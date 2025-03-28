@@ -76,7 +76,9 @@
         justify-content: center;
         position: relative;
         z-index: 1;
-        height: 50%;
+        height: 48.5%;
+        margin-left: 1%;
+        margin-bottom: 1.75%;
     }
     .card:nth-of-type(2) {
         background-image: url(../img/img/montgolfiere.jpg);
@@ -123,7 +125,8 @@
     gap: 10%;
     background-image: url(../svg/wave.svg);
     background-size: cover;
-    height: 90vh;
+    padding-top: 13.5%;
+    padding-bottom: 15%;
 }
 
 .features-heading {
@@ -131,6 +134,7 @@
     margin: auto;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: -5%;
 }
 
 .feature-card {

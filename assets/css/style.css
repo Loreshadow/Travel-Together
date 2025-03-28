@@ -210,7 +210,9 @@ header nav .menu-item:hover {
   justify-content: center;
   position: relative;
   z-index: 1;
-  height: 50%;
+  height: 48.5%;
+  margin-left: 1%;
+  margin-bottom: 1.75%;
 }
 .card-container-right .card:nth-of-type(2) {
   background-image: url(../img/img/montgolfiere.jpg);
@@ -254,7 +256,8 @@ header nav .menu-item:hover {
   gap: 10%;
   background-image: url(../svg/wave.svg);
   background-size: cover;
-  height: 90vh;
+  padding-top: 13.5%;
+  padding-bottom: 15%;
 }
 
 .features-heading {
@@ -262,6 +265,7 @@ header nav .menu-item:hover {
   margin: auto;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: -5%;
 }
 
 .feature-card {
@@ -316,7 +320,7 @@ header nav .menu-item:hover {
     align-items: center;
   }
   header .logo-container {
-    width: 50%;
+    width: 75%;
   }
   header .logo-container img {
     width: 100%;
@@ -327,9 +331,13 @@ header nav .menu-item:hover {
   header nav .menu-img-container {
     visibility: visible;
     margin-top: -15%;
+    width: 15%;
   }
   #banner {
     width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #banner .banner-content {
     width: 85%;
@@ -343,7 +351,7 @@ header nav .menu-item:hover {
   }
   #services .cards-container {
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
   #services .cards-container .card-container-left {
@@ -352,6 +360,8 @@ header nav .menu-item:hover {
   #services .cards-container .card-container-left .card {
     max-width: 100%;
     margin-bottom: 1%;
+    height: 45vh;
+    background-position: center;
   }
   #services .cards-container .card-container-right {
     width: 100%;
@@ -360,6 +370,7 @@ header nav .menu-item:hover {
     max-width: 100%;
     margin: 0;
     margin-bottom: 1%;
+    height: 45vh;
   }
   #features {
     display: flex;
@@ -378,6 +389,10 @@ header nav .menu-item:hover {
   #features .features-container .feature-card {
     width: 75%;
     margin-bottom: 1.5%;
+  }
+  #features .features-container .feature-card .feature-content {
+    width: 75%;
+    text-align: center;
   }
   #bottom-banner {
     width: 100%;
@@ -431,8 +446,22 @@ header nav .menu-item:hover {
   }
 }
 @media screen and (max-width: 425px) {
+  body {
+    width: 100%;
+  }
+  header .logo-container {
+    width: 85%;
+  }
+  header nav .menu-img-container {
+    margin-top: -20%;
+    width: 10%;
+  }
   #banner {
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
   }
   #banner .banner-content h1 {
     font-size: 2rem;
@@ -440,11 +469,26 @@ header nav .menu-item:hover {
   #banner .banner-content p {
     font-size: 1.25rem;
   }
+  #services .cards-container {
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+  }
+  #services .cards-container .card-container-left .card .card-content {
+    margin-left: 40%;
+  }
+  #services .cards-container .card-container-right .card .card-content {
+    margin-left: 40%;
+  }
   #bottom-banner .banner-content h2 {
     font-size: 2rem;
   }
   #bottom-banner .banner-content p {
     font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
   }
 }
 .cta {

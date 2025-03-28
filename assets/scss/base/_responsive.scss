@@ -14,7 +14,7 @@
         flex-direction: column;
         align-items: center;
         .logo-container {
-            width: 50%;
+            width: 75%;
             img {
                 width: 100%;
             }
@@ -24,12 +24,16 @@
             .menu-img-container {
                 visibility: visible;
                 margin-top: -15%;
+                width: 15%;
             }
         }
     }
-    // responsive banner _banner.scss 
+    // responsive banner 
     #banner {
         width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .banner-content {
             width: 85%;
             margin: 0 auto;
@@ -38,18 +42,20 @@
             visibility: hidden;
         }
     }
-    // responsive services _services.scss 
+    // responsive services  
     #services {
         width: 100%;
         .cards-container {
             flex-direction: column;
-            width: 90%;
+            width: 95%;
             margin: 0 auto;
             .card-container-left {
                 width: 100%;
                 .card {
                     max-width: 100%;
                     margin-bottom: 1%;
+                    height: 45vh;
+                    background-position: center;           
                 }
             }
             .card-container-right {
@@ -58,12 +64,13 @@
                     max-width: 100%;
                     margin: 0;
                     margin-bottom: 1%;
+                    height: 45vh;
                 }
             }
         }
     }
 
-    // Responsive features _features.scss 
+    // Responsive features 
 
     #features {
         display: flex;
@@ -80,6 +87,10 @@
             .feature-card {
                 width: 75%;
                 margin-bottom: 1.5%;
+                .feature-content {
+                    width: 75%;
+                    text-align: center;
+                }
             }
         }
     }
@@ -144,9 +155,30 @@
 // responsive mobile 425px
 
 @media screen and (max-width: 425px) {
-     // responsive banner _banner.scss 
+    body {
+        width: 100%;
+    }
+
+    // responsive header 
+    header {
+        .logo-container {
+            width: 85%;
+        }
+        nav {
+            .menu-img-container {
+                margin-top: -20%;
+                width: 10%;
+            }
+        }
+    }
+
+     // responsive banner 
     #banner {
-        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
         .banner-content {
             h1 {
                 font-size: 2rem;
@@ -156,8 +188,29 @@
             }
         }
     }
+    // responsive services 
+    #services {
+        .cards-container {
+            margin-left: 3.5%;
+            margin-right: 3.5%;
+            .card-container-left {
+                .card { 
+                    .card-content {
+                        margin-left: 40%;
+                    }        
+                }
+            }
+            .card-container-right {
+                .card {
+                    .card-content {
+                        margin-left: 40%;
+                    }   
+                }
+            }
+        }
+    }
 
-        // Responsive features _features.scss 
+        // Responsive features 
         #bottom-banner {
             .banner-content {
                 h2 {
@@ -167,5 +220,11 @@
                     font-size: 1.25rem;
                 }
             }
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        body {
+            width: 100%;
         }
     }
