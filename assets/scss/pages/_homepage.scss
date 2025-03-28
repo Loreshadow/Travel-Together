@@ -4,6 +4,39 @@
 @use "../component/card" as card;
 @use "../abstract/mixins.scss" as mixin;
 
+// section banner 
+#banner {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1.5% auto;
+    padding: 5%;
+    width: 80%;
+    background-color: #E7816B;
+    border-radius: v.$radius;
+    position: relative;
+    overflow: hidden;
+
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        color: white;
+    }
+
+    .banner-img-container {
+        width: 20%;
+        z-index: 2;
+        margin-left: 20%;
+        margin-bottom: -30%;
+        img {
+            max-width: 100%;
+            z-index: -1;
+        }
+    }
+}
+
+
 
 // section cards 
 .cards-container {
@@ -11,9 +44,6 @@
     justify-content: center;
     width: 100%;
 }
-
-
-
 
 .card-container-left {
     width: 40%;
@@ -77,4 +107,74 @@
 
 .card:hover {
     box-shadow: 1px 2px 7px 4px rgba(0, 0, 0, 0.499);
+}
+
+// section features 
+
+#features {
+    z-index: 10;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: -12.5%;
+    gap: 10%;
+    background-image: url(../svg/wave.svg);
+    background-size: cover;
+    height: 90vh;
+}
+
+.features-heading {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feature-card {
+    width: 20%;
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .feature-logo-container {
+        width: 20%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#bottom-banner {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-bottom: -6%;
+    padding: 2.5%;
+    width: 70%;
+    border-radius: v.$radius;
+    background-color: #E7816B;
+    position: relative;
+    .banner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        color: white;
+    }
+    .bottom-banner-cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        z-index: 1;
+        a {
+            padding: 15px 25px;
+        }
+    }
 }

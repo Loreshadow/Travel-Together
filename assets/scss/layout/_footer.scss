@@ -21,9 +21,12 @@
             max-width: 100%;
         }
     }
-    .menu-item {
-        color: white;
-        transition: all 0.15s ease-in;
+    .menu-items-container {
+        display: flex;
+        .menu-item {
+            color: white;
+            transition: all 0.15s ease-in;
+        }
     }
 }
 

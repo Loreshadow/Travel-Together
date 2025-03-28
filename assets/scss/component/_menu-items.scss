@@ -2,12 +2,10 @@
 @use "../base/base.scss" as base;
 
 .menu-items-container {
-    display: flex;
     list-style: none;
     gap: 35px;
     font-size: 1.5rem;
     .menu-item {
         text-decoration: none;
-        display: flex;
     }
 }

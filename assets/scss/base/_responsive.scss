@@ -3,9 +3,7 @@
 @use "../base/base.scss" as base;
 @use "../layout/header";
 @use "../layout/footer";
-@use "../main/banner";
-@use "../main/services";
-@use "../main/features";
+@use "../pages/homepage";
 
 // fichier responsive 
 // responsive tablet 
