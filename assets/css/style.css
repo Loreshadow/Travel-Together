@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Lato";
-  src: url(../../fonts/Lato/Lato-Regular.ttf);
+  src: url(../fonts/Lato/Lato-Regular.ttf);
 }
 * {
   box-sizing: border-box;
@@ -148,87 +148,22 @@ header nav .menu-item:hover {
   z-index: -1;
 }
 
-.cards-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.card-container-left {
-  width: 40%;
-}
-.card-container-left .card {
-  height: 100%;
-}
-
-.card-container-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40%;
-}
-
-.service-heading {
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-start;
-  width: 80%;
-}
-
 .card {
   width: 100%;
   border-radius: 10px;
-  background-image: url("../img/img/homme-assis-batiment.jpg");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12.5%;
-  position: relative;
-  transition: all 0.2s ease-in;
+  height: 50vh;
 }
-.card .card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  color: white;
-  z-index: 2;
-}
-.card .card-content .card-cta {
+
+.card-cta {
   text-decoration: none;
   color: white;
 }
 
-.card-container-right > .card:nth-of-type(1) {
-  background-image: url("../img/img/passport.jpg");
-  margin-bottom: 1%;
-  margin-left: 1%;
-}
-
-.card-container-right > .card:nth-of-type(2) {
-  background-image: url("../img/img/montgolfiere.jpg");
-  margin-left: 1%;
-}
-
-.card-cta::after {
-  content: ">";
-  color: #CD654C;
-  font-size: 1.5rem;
-}
-
-.card-overlay {
+.card-content {
+  margin-left: 45%;
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.385);
-  z-index: 1;
-  position: absolute;
-}
-
-.card:hover {
-  box-shadow: 1px 2px 7px 4px rgba(0, 0, 0, 0.499);
+  color: white;
+  z-index: 2;
 }
 
 #features {
@@ -462,6 +397,77 @@ header nav .menu-item:hover {
 .menu-items-container .menu-item {
   text-decoration: none;
   display: flex;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-container-left {
+  width: 40%;
+}
+.card-container-left .card {
+  background-image: url(../img/img/homme-assis-batiment.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.card-container-left .card-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.385);
+  z-index: 1;
+  position: absolute;
+}
+
+.card-container-right {
+  width: 40%;
+}
+.card-container-right .card {
+  background-image: url(../img/img/passport.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  height: 50%;
+}
+.card-container-right .card:nth-of-type(2) {
+  background-image: url(../img/img/montgolfiere.jpg);
+}
+.card-container-right .card-overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.385);
+  z-index: 1;
+  position: absolute;
+}
+
+.service-heading {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.card-cta::after {
+  content: ">";
+  color: #CD654C;
+  font-size: 1.5rem;
+}
+
+.card:hover {
+  box-shadow: 1px 2px 7px 4px rgba(0, 0, 0, 0.499);
 }
 
 /*# sourceMappingURL=style.css.map */

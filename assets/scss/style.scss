@@ -13,6 +13,9 @@
 @use "layout/header";
 @use "layout/footer.scss";
 
+// pages 
+@use "pages/homepage";
+
 // main content 
 @use "main/banner";
 @use "main/services";
